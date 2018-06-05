@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery实现图标切换</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_637452_pvuj39onf8ddkj4i.css">
+</head>
+<style>
+   .iconfont {
+     color: skyblue;
+     font-size: 30px;
+   }
+ </style>
+<body>
+  <span class="github"><i class="iconfont icon-github"></i></span>
+  <script>
+    $('.github').on('click', function(){
+      var $iconfont = $(this).find('.iconfont')
+      $iconfont.toggleClass('icon-github').toggleClass('icon-wechat')
+    })
+  </script>
+</body>
+</html>
